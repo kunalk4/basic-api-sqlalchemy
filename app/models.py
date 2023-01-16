@@ -7,6 +7,7 @@ class User(db.Model):
     email = db.Column(db.String(120), index=True)
     location = db.Column(db.String(128))
 
+
 class UserSchema(ma.SQLAlchemyAutoSchema):
     class Meta:
        model = User

@@ -12,5 +12,3 @@ migrate = Migrate(app, db)
 ma = Marshmallow(app)
 
 from app import routes, models
-
-
