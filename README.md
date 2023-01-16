@@ -1,4 +1,7 @@
 # REST-api-sqlalchemy
-Creating a RESTful API using Flask, FLASK-SQLAlchemy and Flask-Marshmallow
+Creating a RESTful API using Flask, FLASK-SQLAlchemy, Flask-Marshmallow and Flask-Migrate
 
-Builds an API to test POST and GET methods supplied via Postman. 
+Application allows user to POST data to database and retrieve user data via GET. The database used is a local development sqlite with migration scripts attached. 
+
+POST requests currently require POSTMAN (or alternative) as no frontend built. 
+
