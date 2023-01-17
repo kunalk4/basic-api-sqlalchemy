@@ -13,15 +13,37 @@ This project uses <code>pipenv</code> to install packages and associated depende
 
 In the <code>./app</code> directory, run <code>pip install pipenv</code> in the command line
 
-This will create a virtual environment and two files are generated. The <code>Pipfile</code> contains package requirements for the application. And the <code>Pipfile.lock</code> informs which specific version of those packages should be used, avoiding the risks of automatically upgrading packages that depend upon each other and breaking your project dependency tree.
+This will create a virtual environment and two files are generated. 
+
+The <code>Pipfile</code> contains package requirements for the application. 
+
+The <code>Pipfile.lock</code> informs which specific version of those packages should be used, avoiding the risks of automatically upgrading packages that depend upon each other and breaking your project dependency tree.
 
 Run <code>pipenv shell</code> to activate this virtual environment
 
 To install a package run <code>pipenv install <package-name></code>
 
+The following packages need to be installed:
+
+<code>pipenv install flask <package-name></code>
+<code>pipenv install flask-sqlalchemy<package-name></code>
+<code>pipenv install flask-migrate<package-name></code>
+<code>pipenv install flask-sqlalchemy<package-name></code>
+
 # Environments 
   
-The environment variables for this proejct can be found in the app/.env folder. Run <code>pip install dotenv</code>. This will allow the /.env file to create environment variables whenever this app is run, without having to manually set them 
+The environment variables for this proejct can be found in the app/.env folder. 
+
+As the <code>/.env</code> file can contain sensitive information I have incldued a <code>/.env.example</code> file to show you an example of what one should look like. 
+
+The two environment varialbes used are 
+
+<code>FLASK_APP=routes.py</code>
+<code>FLASK_DEBUG=1</code>
+
+Run <code>pip install dotenv</code>. 
+
+This will allow the <code>/.env</code> file to create environment variables whenever this app is run, without having to manually set them.
 
 # Database
 
@@ -35,3 +57,7 @@ Finally, run <code>flask db upgrade</code> to update changes to the database.
 
 # API Doc
 TODO (31/12/2022) (Generated via Swagger UI) 
+
+# Running app
+
+To run the app go to the 
