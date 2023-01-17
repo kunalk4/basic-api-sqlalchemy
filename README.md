@@ -11,9 +11,7 @@ POST requests currently require POSTMAN (or alternative) as no front-end applica
 
 This project uses <code>pipenv</code> to install packages and associated dependencies
 
-In the <code>./app</code> directory, run <code>pip install pipenv</code> in the command line
-
-This will create a virtual environment and two files are generated. 
+In the <code>./app</code> directory, run <code>pip install pipenv</code> in the command line. This will create a virtual environment and two files are generated. 
 
 The <code>Pipfile</code> contains package requirements for the application. 
 
@@ -28,7 +26,8 @@ The following packages need to be installed:
 <code>pipenv install flask <package-name></code>
 <code>pipenv install flask-sqlalchemy<package-name></code>
 <code>pipenv install flask-migrate<package-name></code>
-<code>pipenv install flask-sqlalchemy<package-name></code>
+<code>pipenv install flask-marshmallow<package-name></code>
+  <code>pipenv install marshmallow-sqlalchemy</code>
 
 # Environments 
   
@@ -40,6 +39,9 @@ The two environment varialbes used are
 
 <code>FLASK_APP=routes.py</code>
 <code>FLASK_DEBUG=1</code>
+  
+The first environment variable points the <code>flask run<package-name></code> command to the correct entrypoint for the application. 
+The second runs the app in debug mode.
 
 Run <code>pip install dotenv</code>. 
 
@@ -48,6 +50,8 @@ This will allow the <code>/.env</code> file to create environment variables when
 # Database
 
 The database used is a local development sqlite. The ORM used is SQLalchemy and JSON objects are serialised using Flask-Marshmallow. The application uses Flask-Migrate to generate migration scripts for schema versioning. 
+  
+Run <code>pipenv install flask-migrate</code> to install the migration package. 
 
 Within the <code>app</code> folder, run <code>flask db init</code> to generate a migration scripts within the  <code>./migration</code> folder
 
@@ -60,4 +64,8 @@ TODO (31/12/2022) (Generated via Swagger UI)
 
 # Running app
 
-To run the app go to the 
+To run the app go to the <code>./app<package-name></code> directory and run
+  
+<code>flask run<package-name></code>
+  
+The app will serve on local host https://127.0.0.1/5000. The default port is 5000. 
