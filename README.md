@@ -7,7 +7,13 @@ POST requests currently require POSTMAN (or alternative) as no front-end applica
 
 # Environments
 
-This project uses <code>pipenv</code> to install packages and associated dependencies. Run <code>pip install pipenv</code> into the command line when in the <code>app</code> directory. This will create a virtual environment. Run <code>pipenv shell</code> to activate this virtual environment. 
+This project uses <code>pipenv</code> to install packages and associated dependencies. 
+
+In the <code>app</code> directory, run <code>pip install pipenv</code> in the command line. 
+
+This will create a virtual environment and two files are generated. The <code>Pipfile</code> contains package requirements for the application. And the <code>Pipfile.lock</code> informs which specific version of those packages should be used, avoiding the risks of automatically upgrading packages that depend upon each other and breaking your project dependency tree.
+
+Run <code>pipenv shell</code> to activate this virtual environment. 
 
 To install a package run <code>pipenv install <package-name></code>.
 
@@ -15,14 +21,13 @@ The environment variables for this proejct can be found in the app/.env folder. 
 
 # Database
 
-The database used is a local development sqlite. The ORM used is SQLalchemy and JSON objects are serialised using Flask-Marshmallow. The application uses Flask-Migrate to generate migration scripts. 
+The database used is a local development sqlite. The ORM used is SQLalchemy and JSON objects are serialised using Flask-Marshmallow. The application uses Flask-Migrate to generate migration scripts for schema versioning. 
 
-Within the <code>app</code> folder, run <code>flask db init</code> to intialise 
-<code>app</code>
-<code>app</code>
-<code>app</code>
+Within the <code>app</code> folder, run <code>flask db init</code> to generate a migration scripts within the  <code>./migration</code> folder
 
-Please run 
+Run <code>flask db migrate</code> to run a migration script once a change to the schema has been made
+
+Finally, run <code>flask db upgrade</code> to update changes to the database. 
 
 # API Doc
 TODO (31/12/2022) (Generated via Swagger UI) 
