@@ -7,4 +7,8 @@ POST requests currently require POSTMAN (or alternative) as no frontend built.
 
 # Environments
 
-The environment variables for this proejct can be found in the app/.env folder. Using the <code>dotenv<code> package
+The subdirectory should
+
+This project uses <code>pipenv</code> to install packages and associated dependencies. Please <code>pip install pipenv</code>
+
+The environment variables for this proejct can be found in the app/.env folder. Using the <code>dotenv</code> package
