@@ -9,19 +9,19 @@ POST requests currently require POSTMAN (or alternative) as no front-end applica
 
 # Requirements
 
-This project uses <code>pipenv</code> to install packages and associated dependencies. 
+This project uses <code>pipenv</code> to install packages and associated dependencies
 
-In the <code>./app</code> directory, run <code>pip install pipenv</code> in the command line. 
+In the <code>./app</code> directory, run <code>pip install pipenv</code> in the command line
 
 This will create a virtual environment and two files are generated. The <code>Pipfile</code> contains package requirements for the application. And the <code>Pipfile.lock</code> informs which specific version of those packages should be used, avoiding the risks of automatically upgrading packages that depend upon each other and breaking your project dependency tree.
 
-Run <code>pipenv shell</code> to activate this virtual environment. 
+Run <code>pipenv shell</code> to activate this virtual environment
 
-To install a package run <code>pipenv install <package-name></code>.
+To install a package run <code>pipenv install <package-name></code>
 
 # Environments 
   
-The environment variables for this proejct can be found in the app/.env folder. Run <code>pip install dotenv</code>. This will allow the /.env file to create environment variables whenever this app is run, without having to manually set them. 
+The environment variables for this proejct can be found in the app/.env folder. Run <code>pip install dotenv</code>. This will allow the /.env file to create environment variables whenever this app is run, without having to manually set them 
 
 # Database
 
