@@ -6,3 +6,5 @@ Application allows user to POST data to database and retrieve user data via GET.
 POST requests currently require POSTMAN (or alternative) as no frontend built. 
 
 # Environments
+
+The environment variables for this proejct can be found in the app/.env folder. Using the <code>dotenv<code> package
