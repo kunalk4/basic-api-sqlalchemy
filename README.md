@@ -9,9 +9,7 @@ POST requests currently require POSTMAN (or alternative) as no front-end applica
 
 # Requirements
 
-This project uses <code>pipenv</code> to install packages and associated dependencies
-
-In the <code>./app</code> directory, run <code>pip install pipenv</code> in the command line. This will create a virtual environment and two files are generated. 
+This project uses <code>pipenv</code> to install packages and associated dependencies 
 
 The <code>Pipfile</code> contains package requirements for the application. 
 
@@ -19,15 +17,7 @@ The <code>Pipfile.lock</code> informs which specific version of those packages s
 
 Run <code>pipenv shell</code> to activate this virtual environment
 
-To install a package run <code>pipenv install <package-name></code>
-
-The following packages need to be installed:
-
-<code>pipenv install flask <package-name></code>
-<code>pipenv install flask-sqlalchemy<package-name></code>
-<code>pipenv install flask-migrate<package-name></code>
-<code>pipenv install flask-marshmallow<package-name></code>
-  <code>pipenv install marshmallow-sqlalchemy</code>
+In the <code>./app</code> directory, run <code>pip install</code> in the command line. This will create install all dependencies in the <code>Pipfile</code>
 
 # Environments 
   
