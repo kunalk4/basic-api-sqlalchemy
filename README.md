@@ -8,10 +8,10 @@ This code is based on the medium article (https://medium.com/@tinuadeadeleke/a-b
 POST requests currently require POSTMAN (or alternative) as no front-end application, however this will be updated by 31/01/2022. 
 
 TODO:
-Flask-RESTplus
-DOckerise
+Flask-RESTplus \n
+Dockerise
 AWS EBS
-Front End
+Front-End
 
 # Requirements
 
