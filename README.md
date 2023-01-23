@@ -3,9 +3,15 @@ Creating a RESTful API using Flask, FLASK-SQLAlchemy, Flask-Marshmallow and Flas
 
 This application allows user to POST data to database and retrieve user data via GET. 
 
-This code is based on the medium article (https://medium.com/@tinuadeadeleke/a-beginners-guide-to-building-rest-apis-flask-flask-sqlalchemy-and-flask-marshmallow-5159d4eb46d8 ). However I have adapted the code to run error free and used <code>pipenv</code> to track requirements and dependencies.
+This code is based on the medium article (https://medium.com/@tinuadeadeleke/a-beginners-guide-to-building-rest-apis-flask-flask-sqlalchemy-and-flask-marshmallow-5159d4eb46d8 ). However I have adapted the code to: create a front-end, dockerise, run on AWS EBS, include Swagger docs, run error free and used <code>pipenv</code> to track requirements and dependencies.
 
 POST requests currently require POSTMAN (or alternative) as no front-end application, however this will be updated by 31/01/2022. 
+
+TODO:
+Flask-RESTplus
+DOckerise
+AWS EBS
+Front End
 
 # Requirements
 
